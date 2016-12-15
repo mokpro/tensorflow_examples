@@ -51,4 +51,10 @@ Accuracy output with [beginner_mnist.py](./beginner_mnist.py) for 5 optimizers:
 
 ### Steps:
 
-1.
+  1. Do same steps as above and create [expert_mnist.py](./expert_mnist.py)
+  2. Refactor to use `InteractiveSession()` instead of `Session()`
+  3. Optimization Steps - TBD
+  4. We get higher accuracy. (How?)
+
+## Notes
+- Used [autopep8](https://pypi.python.org/pypi/autopep8) to format python
