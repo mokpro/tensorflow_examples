@@ -14,9 +14,24 @@ ALL_OPTIMIZERS = [
     'ProximalGradientDescent'
 ]
 
+
 def arg_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument('optimizers', nargs='*', choices=ALL_OPTIMIZERS, default=random.choice(ALL_OPTIMIZERS))
-    parser.add_argument('--all', action='store_true', help='Runs all optimizers')
+    parser.add_argument(
+        'optimizers',
+        nargs='*',
+        choices=ALL_OPTIMIZERS,
+        default=random.choice(ALL_OPTIMIZERS))
+    parser.add_argument(
+        '--all',
+        action='store_true',
+        help='Runs all optimizers')
     args = parser.parse_args()
-    return ALL_OPTIMIZERS if args.all else args.optimizers
+    if args.all:
+        final_optimizers = ALL_OPTIMIZERS
+    elif isinstance(args.optimizers, list):
+        final_optimizers = args.optimizers
+    else:
+        final_optimizers = [args.optimizers]
+
+    return final_optimizers
