@@ -1,6 +1,6 @@
 # Solving MNIST Using TensorFlow
 
-I started using the [beginner](https://www.tensorflow.org/tutorials/mnist/beginners/) tutorial.
+I started using the [TensorFlow tutorial](https://www.tensorflow.org/tutorials/).
 
 
 These steps more like what I did rather than what should be done! Also some notes along with it.
@@ -45,3 +45,10 @@ Accuracy output with [beginner_mnist.py](./beginner_mnist.py) for 5 optimizers:
   Optimizer: ProximalAdagrad, Accuracy: 0.9209
   Optimizer: ProximalGradientDescent, Accuracy: 0.9216
 ```
+
+
+## Follow [Deep MNIST for Experts](https://www.tensorflow.org/tutorials/mnist/pros/)
+
+### Steps:
+
+1.
