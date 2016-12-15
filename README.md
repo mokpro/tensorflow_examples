@@ -38,3 +38,9 @@ The following installation steps are cherry-picked from [TensorFlow Installation
     $ python
     >>> import tensorflow as tf
   ```
+
+# Resources to explore
+
+1. [TensorFlow tutorials](https://www.tensorflow.org/tutorials/)
+2. [Learning TensorFlow](http://learningtensorflow.com/)
+3. [TF Learn](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/learn/python/learn) (previously SkFlow)
