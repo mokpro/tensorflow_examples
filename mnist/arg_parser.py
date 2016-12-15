@@ -11,7 +11,8 @@ ALL_OPTIMIZERS = [
     'Adagrad',
     'Adadelta',
     'ProximalAdagrad',
-    'ProximalGradientDescent'
+    'ProximalGradientDescent',
+    'Adam'
 ]
 
 

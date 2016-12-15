@@ -8,7 +8,8 @@ OPTIMIZERS_NAME_TO_CLASS_MAP = {
     'Adagrad': tf.train.AdagradOptimizer(0.3),
     'Adadelta': tf.train.AdadeltaOptimizer(0.3),
     'ProximalAdagrad': tf.train.ProximalAdagradOptimizer(0.3),
-    'ProximalGradientDescent': tf.train.ProximalGradientDescentOptimizer(0.3)
+    'ProximalGradientDescent': tf.train.ProximalGradientDescentOptimizer(0.3),
+    'Adam': tf.train.AdamOptimizer(1e-4)
 }
 
 
@@ -43,7 +44,7 @@ def main(optimizers):
     print("\n\n\n")
 
     for train_step in train_steps:
-        for i in range(1000):
+        for i in range(20000):
             batch_xs, batch_ys = mnist.train.next_batch(100)
             sess.run(train_step, feed_dict={x: batch_xs, y_: batch_ys})
         correct_prediction = tf.equal(tf.argmax(y, 1), tf.argmax(y_, 1))
