@@ -11,7 +11,7 @@ The following installation steps are cherry-picked from [TensorFlow Installation
   ```bash
     $ which python
   ```
-2. If output is `/usr/local/bin/python` then skip to step 2.
+2. If output is `/usr/local/bin/python` then skip to step 4.
 3. Install a python at user level using [Homebrew](http://brew.sh/):
 
   ```bash
